@@ -4,7 +4,7 @@
   "description": "Curso NodeJs SamuelAlvarez",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon http2.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/SameuelxD/CursoNodeJs#readme",
   "dependencies": {
+    "express": "4.18.2",
     "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
