@@ -3,10 +3,10 @@ const ditto = require("./pokemon/ditto.json");
 const PORT = process.env.PORT ?? 1234;
 
 const app = express();
+app.use(app.use(express.json()));
 app.disable("x-powered-by"); // quitar
 
-// app.use(express.json());
-
+// app.use(express.json()) Middleware Express;
 
 app.use((req, res, next) => {
   if (req.method == "POST") return next();
