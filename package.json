@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Curso NodeJs SamuelAlvarez",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon http2.js"
+    "dev": "nodemon http2.js",
+    "start:mysql":"node --watch serverMySql.js",
+    "start:local":"node --watch serverLocal.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +26,13 @@
   },
   "homepage": "https://github.com/SameuelxD/CursoNodeJs#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "4.18.2",
-    "picocolors": "^1.0.0"
+    "mongodb": "^6.3.0",
+    "mysql2": "^3.6.5",
+    "picocolors": "^1.0.0",
+    "uuid": "^9.0.1",
+    "zod": "3.22.4"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
